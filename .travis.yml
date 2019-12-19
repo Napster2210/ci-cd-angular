@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-  - '8'
+  - 8
 
- branches:
+branches:
   only:
     - develop 
 
@@ -19,10 +19,10 @@ install:
 script:
   - npm run build:prod
 
-addons:
-  artifacts:
-    # ⋮
-    working_dir: dist/**
+# addons:
+#   artifacts:
+#     # ⋮
+#     working_dir: dist/**
 
 notifications:
   slack: risbeacondev:4RmlqtpsVy0inPgEIjNdYjIR
