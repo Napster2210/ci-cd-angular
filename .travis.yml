@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - '8'
+
+ branches:
+  only:
+    - develop 
+
+before_install:
+  - npm install -g @angular/cli --quiet
+
+cache:
+  directories:
+    - ./node_modules
+
+install:
+  - npm install
+
+script:
+  - npm run build:prod
+
+addons:
+  artifacts:
+    # ⋮
+    working_dir: dist/**
