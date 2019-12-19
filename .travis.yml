@@ -23,3 +23,6 @@ addons:
   artifacts:
     # ⋮
     working_dir: dist/**
+
+notifications:
+  slack: risbeacondev:4RmlqtpsVy0inPgEIjNdYjIR
