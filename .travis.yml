@@ -24,5 +24,11 @@ script:
 #     # ⋮
 #     working_dir: dist/**
 
+deploy:
+  skip_cleanup: true
+  provider: firebase
+  token:
+    secure: $FIREBASE_TOKEN
+
 notifications:
   slack: risbeacondev:4RmlqtpsVy0inPgEIjNdYjIR

@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/ci-cd-travis",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
